@@ -169,4 +169,72 @@ header h1{
 }
 
 }
+
+```css
+/* ---------- CARDS ---------- */
+
+.card{
+    width:min(900px,90%);
+    margin:50px auto;
+    padding:35px;
+    background:rgba(255,255,255,.15);
+    border-radius:25px;
+    backdrop-filter:blur(12px);
+    box-shadow:0 0 25px rgba(255,255,255,.2);
+}
+
+.card h2{
+    margin-bottom:20px;
+    color:#fff;
+}
+
+.card p{
+    line-height:1.8;
+}
+
+/* ---------- FOOTER ---------- */
+
+footer{
+    text-align:center;
+    padding:35px;
+    margin-top:40px;
+    background:rgba(0,0,0,.25);
+}
+
+/* ---------- DARK MODE ---------- */
+
+.dark-mode{
+    background:linear-gradient(180deg,#120024,#2d0a5f,#6d3db8);
+}
+
+/* ---------- MOBILE ---------- */
+
+@media (max-width:768px){
+
+.hero{
+    height:75vh;
+}
+
+.hero-overlay h1{
+    font-size:2.5rem;
+}
+
+.hero-overlay h2{
+    font-size:1.5rem;
+}
+
+.hero-overlay p{
+    font-size:1rem;
+}
+
+.listen-button{
+    padding:14px 28px;
+}
+
+.card{
+    width:95%;
+}
+
+}
 ```
+
