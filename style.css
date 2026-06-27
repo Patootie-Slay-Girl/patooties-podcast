@@ -1,48 +1,58 @@
 ```css
-/* Patootie's Podcast Theme */
+/* ============================
+   Patootie's Podcast
+   Version 2 Theme
+============================ */
 
-:root{
-    --deep-purple:#5b2a86;
-    --royal-purple:#7b2cbf;
-    --lavender:#d9b8ff;
-    --midnight:#1f1037;
-    --white:#ffffff;
-    --text:#333;
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
-/* Background */
 body{
-    margin:0;
     font-family:Arial, Helvetica, sans-serif;
-    background:linear-gradient(135deg,var(--deep-purple),var(--royal-purple),var(--lavender));
+    background:linear-gradient(-45deg,#4b0082,#7b2cbf,#b57cff,#e0c3fc);
+    background-size:400% 400%;
+    animation:gradientMove 15s ease infinite;
     color:white;
-    overflow-x:hidden;
+    min-height:100vh;
+}
+
+/* Animated Background */
+@keyframes gradientMove{
+    0%{background-position:0% 50%;}
+    50%{background-position:100% 50%;}
+    100%{background-position:0% 50%;}
 }
 
 /* Header */
+
 header{
     text-align:center;
     padding:70px 20px;
 }
 
 header h1{
-    font-size:3.5rem;
-    margin-bottom:10px;
+    font-size:3rem;
+    margin-bottom:15px;
 }
 
 header p{
-    font-size:1.3rem;
+    font-size:1.2rem;
+    margin-bottom:10px;
 }
 
-/* Buttons */
+/* Button */
+
 .button{
     display:inline-block;
-    padding:15px 30px;
     margin-top:25px;
+    padding:15px 30px;
     background:white;
-    color:var(--royal-purple);
+    color:#6a0dad;
+    border-radius:40px;
     text-decoration:none;
-    border-radius:30px;
     font-weight:bold;
     transition:.3s;
 }
@@ -52,23 +62,42 @@ header p{
 }
 
 /* Cards */
+
 .card{
+    width:90%;
+    max-width:900px;
+    margin:30px auto;
+    padding:30px;
+    border-radius:25px;
     background:rgba(255,255,255,.18);
     backdrop-filter:blur(12px);
-    border-radius:20px;
-    padding:25px;
-    margin:20px auto;
-    max-width:900px;
+    box-shadow:0 8px 25px rgba(0,0,0,.25);
+}
+
+.card h2{
+    margin-bottom:20px;
 }
 
 /* Footer */
+
 footer{
     text-align:center;
-    padding:30px;
+    padding:40px;
+    font-size:18px;
 }
 
-/* Dark Mode */
-.dark-mode{
-    background:linear-gradient(135deg,var(--midnight),var(--deep-purple),var(--lavender));
+/* Mobile */
+
+@media(max-width:700px){
+
+header h1{
+    font-size:2.2rem;
+}
+
+.card{
+    width:95%;
+}
+
 }
 ```
+
