@@ -1,0 +1,74 @@
+```css
+/* Patootie's Podcast Theme */
+
+:root{
+    --deep-purple:#5b2a86;
+    --royal-purple:#7b2cbf;
+    --lavender:#d9b8ff;
+    --midnight:#1f1037;
+    --white:#ffffff;
+    --text:#333;
+}
+
+/* Background */
+body{
+    margin:0;
+    font-family:Arial, Helvetica, sans-serif;
+    background:linear-gradient(135deg,var(--deep-purple),var(--royal-purple),var(--lavender));
+    color:white;
+    overflow-x:hidden;
+}
+
+/* Header */
+header{
+    text-align:center;
+    padding:70px 20px;
+}
+
+header h1{
+    font-size:3.5rem;
+    margin-bottom:10px;
+}
+
+header p{
+    font-size:1.3rem;
+}
+
+/* Buttons */
+.button{
+    display:inline-block;
+    padding:15px 30px;
+    margin-top:25px;
+    background:white;
+    color:var(--royal-purple);
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.button:hover{
+    transform:scale(1.08);
+}
+
+/* Cards */
+.card{
+    background:rgba(255,255,255,.18);
+    backdrop-filter:blur(12px);
+    border-radius:20px;
+    padding:25px;
+    margin:20px auto;
+    max-width:900px;
+}
+
+/* Footer */
+footer{
+    text-align:center;
+    padding:30px;
+}
+
+/* Dark Mode */
+.dark-mode{
+    background:linear-gradient(135deg,var(--midnight),var(--deep-purple),var(--lavender));
+}
+```
