@@ -1,65 +1,158 @@
+```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Patootie's Podcast</title>
 
-  <link rel="stylesheet" href="style.css">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Patootie's Podcast</title>
+
+<link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<header>
-  <h1>🎙️ Patootie's Podcast</h1>
-  <p><strong>Real talk. Real fun. Real Patootie.</strong></p>
-  <p>Hosted by Patootie</p>
+<nav>
+    <div class="logo">
+        🎙️ Patootie's Podcast
+    </div>
 
-  <a href="#episodes" class="button">🎧 Listen Now</a>
+    <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#episodes">Episodes</a>
+        <a href="#requests">Requests</a>
+
+        <button onclick="toggleDarkMode()" class="darkButton">
+            🌙
+        </button>
+    </div>
+</nav>
+
+<header>
+
+<h1>🎙️ Patootie's Podcast</h1>
+
+<h3>Real talk. Real fun. Real Patootie.</h3>
+
+<p>Hosted by Patootie 💜</p>
+
+<a href="#episodes" class="button">
+🎧 Listen Now
+</a>
+
 </header>
 
 <main>
 
-  <section class="card" id="about">
-    <h2>💜 About</h2>
-    <p>
-      Welcome to Patootie's Podcast! This is a podcast where no topic is off limits. We WILL talk about some weird stuff, but... WHATEVER!
-    </p>
-  </section>
+<section class="card" id="welcome">
 
-  <section class="card" id="featured">
-    <h2>⭐ Featured Episode</h2>
-    <p><strong>Coming Soon!</strong></p>
-    <p>Your newest episode will appear here.</p>
-  </section>
+<h2 id="welcomeMessage">
+💜 What's up, Patoot?
+</h2>
 
-  <section class="card" id="episodes">
-    <h2>🎵 Episodes</h2>
+<p id="welcomeText">
+Loading today's welcome...
+</p>
 
-    <p>🖼️ Episode 1 - Coming Soon</p>
-    <p>🖼️ Episode 2 - Coming Soon</p>
-    <p>🖼️ Episode 3 - Coming Soon</p>
-    <p>🖼️ Episode 4 - Coming Soon</p>
-    <p>🖼️ Episode 5 - Coming Soon</p>
-  </section>
+</section>
 
-  <section class="card" id="requests">
-    <h2>💌 Requests</h2>
+<section class="card" id="about">
 
-    <p>Have an idea for an episode?</p>
+<h2>💜 About</h2>
 
-    href="mailto:PatootieGirl@gmail.com?subject=Podcast Request"
-      Send a Request
-    </a>
-  </section>
+<p>
+Welcome to Patootie's Podcast!
+
+Every episode is about something different, because everything is worth talking about.
+
+Sit back, relax, and enjoy the conversation!
+</p>
+
+</section>
+
+<section class="card" id="featured">
+
+<h2>⭐ Featured Episode</h2>
+
+<h3>Coming Soon!</h3>
+
+<p>
+
+Your newest episode will always appear here.
+
+</p>
+
+<a class="button">
+
+🎧 Listen
+
+</a>
+
+</section>
+
+<section class="card" id="episodes">
+
+<h2>🎙️ Episodes</h2>
+
+<p>🎵 Episode 1 — Coming Soon</p>
+
+<p>🎵 Episode 2 — Coming Soon</p>
+
+<p>🎵 Episode 3 — Coming Soon</p>
+
+<p>🎵 Episode 4 — Coming Soon</p>
+
+<p>🎵 Episode 5 — Coming Soon</p>
+
+<p>🎵 Episode 6 — Coming Soon</p>
+
+<p>🎵 Episode 7 — Coming Soon</p>
+
+<p>🎵 Episode 8 — Coming Soon</p>
+
+<p>🎵 Episode 9 — Coming Soon</p>
+
+<p>🎵 Episode 10 — Coming Soon</p>
+
+</section>
+
+<section class="card" id="requests">
+
+<h2>💌 Requests</h2>
+
+<p>
+
+Have an episode idea?
+
+I'd LOVE to hear it!
+
+</p>
+
+<a class="button"
+href="mailto:PatootieGirl@gmail.com?subject=Podcast Request">
+
+✨ Send a Request
+
+</a>
+
+</section>
 
 </main>
 
 <footer>
-  <p>✨ Made with 💜 by Patootie ✨</p>
+
+<p>
+
+✨ Made with 💜 by Patootie ✨
+
+</p>
+
 </footer>
 
 <script src="script.js"></script>
 
 </body>
+
 </html>
+```
