@@ -1,8 +1,7 @@
 ```css
-/* ============================
-   Patootie's Podcast
-   Version 2 Theme
-============================ */
+/* ===========================
+   Patootie's Podcast v2.0
+=========================== */
 
 *{
     margin:0;
@@ -10,20 +9,65 @@
     box-sizing:border-box;
 }
 
+html{
+    scroll-behavior:smooth;
+}
+
 body{
     font-family:Arial, Helvetica, sans-serif;
-    background:linear-gradient(-45deg,#4b0082,#7b2cbf,#b57cff,#e0c3fc);
+    color:white;
+    background:linear-gradient(-45deg,#4b0082,#6a0dad,#9d4edd,#d8b4fe);
     background-size:400% 400%;
     animation:gradientMove 15s ease infinite;
-    color:white;
     min-height:100vh;
 }
 
-/* Animated Background */
+/* Animated background */
 @keyframes gradientMove{
     0%{background-position:0% 50%;}
     50%{background-position:100% 50%;}
     100%{background-position:0% 50%;}
+}
+
+/* Navigation */
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:18px 30px;
+    position:sticky;
+    top:0;
+    backdrop-filter:blur(12px);
+    background:rgba(0,0,0,.18);
+}
+
+.logo{
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.nav-links{
+    display:flex;
+    gap:18px;
+    align-items:center;
+}
+
+.nav-links a{
+    color:white;
+    text-decoration:none;
+    font-weight:bold;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+.darkButton{
+    border:none;
+    border-radius:30px;
+    padding:8px 14px;
+    cursor:pointer;
 }
 
 /* Header */
@@ -38,20 +82,23 @@ header h1{
     margin-bottom:15px;
 }
 
-header p{
-    font-size:1.2rem;
-    margin-bottom:10px;
+header h3{
+    font-weight:normal;
+    margin-bottom:15px;
 }
 
-/* Button */
+header p{
+    margin-bottom:25px;
+}
+
+/* Buttons */
 
 .button{
     display:inline-block;
-    margin-top:25px;
     padding:15px 30px;
+    border-radius:40px;
     background:white;
     color:#6a0dad;
-    border-radius:40px;
     text-decoration:none;
     font-weight:bold;
     transition:.3s;
@@ -66,16 +113,21 @@ header p{
 .card{
     width:90%;
     max-width:900px;
-    margin:30px auto;
+    margin:35px auto;
     padding:30px;
     border-radius:25px;
     background:rgba(255,255,255,.18);
-    backdrop-filter:blur(12px);
-    box-shadow:0 8px 25px rgba(0,0,0,.25);
+    backdrop-filter:blur(14px);
+    box-shadow:0 8px 30px rgba(0,0,0,.25);
 }
 
 .card h2{
-    margin-bottom:20px;
+    margin-bottom:18px;
+}
+
+.card p{
+    line-height:1.7;
+    margin-bottom:12px;
 }
 
 /* Footer */
@@ -86,12 +138,30 @@ footer{
     font-size:18px;
 }
 
+/* Dark Mode */
+
+.dark-mode{
+    background:linear-gradient(-45deg,#120022,#220044,#3d0066,#6f42c1);
+    background-size:400% 400%;
+    animation:gradientMove 15s ease infinite;
+}
+
 /* Mobile */
 
-@media(max-width:700px){
+@media(max-width:768px){
+
+nav{
+    flex-direction:column;
+    gap:12px;
+}
+
+.nav-links{
+    flex-wrap:wrap;
+    justify-content:center;
+}
 
 header h1{
-    font-size:2.2rem;
+    font-size:2.3rem;
 }
 
 .card{
@@ -100,4 +170,3 @@ header h1{
 
 }
 ```
-
