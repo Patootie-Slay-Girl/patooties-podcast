@@ -1,114 +1,66 @@
-```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Patootie's Podcast</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patootie's Podcast</title>
 
-<style>
-body{
-    margin:0;
-    font-family:Arial,sans-serif;
-    background:linear-gradient(135deg,#5b2a86,#9b5de5,#d291ff);
-    color:white;
-    text-align:center;
-}
-
-header{
-    padding:60px 20px;
-}
-
-.logo{
-    font-size:55px;
-}
-
-h1{
-    font-size:48px;
-    margin-bottom:10px;
-}
-
-.subtitle{
-    font-size:22px;
-    opacity:.9;
-}
-
-.button{
-    display:inline-block;
-    margin-top:30px;
-    padding:15px 30px;
-    background:white;
-    color:#6f2dbd;
-    text-decoration:none;
-    border-radius:30px;
-    font-weight:bold;
-}
-
-section{
-    background:white;
-    color:#333;
-    margin:40px auto;
-    width:90%;
-    max-width:900px;
-    border-radius:20px;
-    padding:40px;
-}
-
-footer{
-    padding:30px;
-}
-</style>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
 <header>
+  <h1>🎙️ Patootie's Podcast</h1>
+  <p><strong>Real talk. Real fun. Real Patootie.</strong></p>
+  <p>Hosted by Patootie</p>
 
-<div class="logo">🎙️💜</div>
-
-<h1>Patootie's Podcast</h1>
-
-<p class="subtitle">
-Hosted by Patootie • A podcast about everything!
-</p>
-
-<a class="button" href="#episodes">
-🎧 Listen Now
-</a>
-
+  <a href="#episodes" class="button">🎧 Listen Now</a>
 </header>
 
-<section>
+<main>
 
-<h2>Welcome!</h2>
+  <section class="card" id="about">
+    <h2>💜 About</h2>
+    <p>
+      Welcome to Patootie's Podcast! This is a podcast where no topic is off limits.
+      Every episode is a chance to laugh, learn, and have fun together.
+    </p>
+  </section>
 
-<p>
-Welcome to Patootie's Podcast!
-Every episode is a new adventure filled with stories, laughs,
-interesting conversations, and fun topics.
-</p>
+  <section class="card" id="featured">
+    <h2>⭐ Featured Episode</h2>
+    <p><strong>Coming Soon!</strong></p>
+    <p>Your newest episode will appear here.</p>
+  </section>
 
-</section>
+  <section class="card" id="episodes">
+    <h2>🎵 Episodes</h2>
 
-<section id="episodes">
+    <p>🖼️ Episode 1 - Coming Soon</p>
+    <p>🖼️ Episode 2 - Coming Soon</p>
+    <p>🖼️ Episode 3 - Coming Soon</p>
+    <p>🖼️ Episode 4 - Coming Soon</p>
+    <p>🖼️ Episode 5 - Coming Soon</p>
+  </section>
 
-<h2>Episodes</h2>
+  <section class="card" id="requests">
+    <h2>💌 Requests</h2>
 
-<p>🎵 Episode 1 (Coming Soon)</p>
+    <p>Have an idea for an episode?</p>
 
-<p>🎵 Episode 2 (Coming Soon)</p>
+    <a class="button" href="mailto:beatrixkerdel@gmail.com?subject=Podcast Request">
+      Send a Request
+    </a>
+  </section>
 
-<p>🎵 Episode 3 (Coming Soon)</p>
-
-</section>
+</main>
 
 <footer>
-
-© 2026 Patootie's Podcast 💜
-
+  <p>✨ Made with 💜 by Patootie ✨</p>
 </footer>
+
+<script src="script.js"></script>
 
 </body>
 </html>
-```
-
